@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lyric Search</title>
+  </head>
+  <body>
+    <button class="left-arrow">&larr;</button>
+    <header>
+      <h1>Lyric Search</h1>
+      <form>
+        <input
+          type="text"
+          placeholder="Enter an Artist or a Song Title..."
+          required
+        />
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+    </header>
+    <main>
+      <h3 class="first-title">Result will be display here.</h3>
+      <h3 class="result-none">Nothing is found.</h3>
+      <ul class="song-list"></ul>
+    </main>
+    <div class="music-detail">
+      <div class="title-wrap">
+        <div class="text-wrap">
+          <span class="title"></span>
+          <span class="artist-name"></span>
+        </div>
+      </div>
+      <div class="lyric"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

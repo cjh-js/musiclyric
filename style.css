@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: 400px;
+  background-image: url("https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header form {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: white;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+header input {
+  font-size: 18px;
+  padding: 10px;
+  width: 350px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+}
+
+header input:focus {
+  outline: none;
+}
+
+.search-btn {
+  border: none;
+  font-size: 20px;
+  padding: 8px 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  background-color: tomato;
+  font-weight: 700;
+}
+
+main {
+  text-align: center;
+}
+
+.first-title {
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.first-title.hide {
+  display: none;
+}
+
+.result-none {
+  display: none;
+}
+
+.result-none.show {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.song-list li {
+  width: 1000px;
+  display: flex;
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  justify-content: space-around;
+  z-index: 10;
+}
+
+.song-list li span {
+  z-index: -1;
+}
+
+.artist {
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.song-list li:hover {
+  background: rgba(48, 48, 48, 0.1);
+}
+
+.music-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.artist-name {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.lyric {
+  margin-top: 20px;
+  word-break: normal;
+  text-align: center;
+}
+
+.music-detail {
+  display: none;
+}
+
+.music-detail.show {
+  display: flex;
+}
+
+main.hide {
+  display: none;
+}
+
+.left-arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-size: 30px;
+  color: white;
+  border: none;
+  background: none;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.left-arrow.show {
+  display: block;
+}
